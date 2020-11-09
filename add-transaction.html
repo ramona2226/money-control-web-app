@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title></title> Add transaction</title>
-    <link rel="stylesheet" type="table" href
+    <link rel="stylesheet" type="text/css" href="main.css/add-transaction.css/"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 </head>
 <body>
 
 <h1 > Add transaction</h1>
-<form>
+<form id="add-transaction">
 
 
-    <button>Add</button>
+<button>Add</button>
+</form>
+
+<form id="pay-transaction">
+<button>Pay</button>
+
+</form >
 
 
-    <button>Pay</button>
 
-
-</br
+    </br
 
     <label for="transaction-from">From:</label><input type="text" id="transaction-from">
 </br
@@ -38,6 +42,12 @@
     <label for="transaction-description">Description:</label><input type="text" id="transaction-description">
 
 </br
+
+<label for="transaction-userId">UserId:</label><input type="text" id="transaction-userId" ></label>
+
+
+</form>
+   <form id="confirm-transaction">
     <button>Confirm</button>
 </form>
 

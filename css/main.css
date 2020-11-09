@@ -11,10 +11,9 @@ h1 {
 }
 
 p {
-    font-family: verdana;
+    font-family: verdana, serif;
     color: brown;
     text-align: center;
     font-size:18px;
 
 }
-
