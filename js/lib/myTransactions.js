@@ -1,20 +1,20 @@
-window.myTransactions =  {
+window.myTransactions = {
 
     API_URL: "http://localhost:8085",
 
     getMyTransactions: function () {
 
+        // todo: read userId dynamically
+        const userId = 94;
+
         $.ajax({
-            url:MoneyControl.API_URL + "/loginUser/myTransactions",
+            url: MoneyControl.API_URL + "/loginUser/myTransactions/"
             method: "GET"
         }).done(function (response) {
             console.log(response);
 
         })
     },
-    displ
-
-
-
 
 }
+myTransactions.getMyTransactions();
