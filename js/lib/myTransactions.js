@@ -8,7 +8,7 @@ window.myTransactions = {
         const userId = 94;
 
         $.ajax({
-            url: MoneyControl.API_URL + "/loginUser/myTransactions/"
+            url: MoneyControl.API_URL + "/loginUser/myTransactions/",
             method: "GET"
         }).done(function (response) {
             console.log(response);
