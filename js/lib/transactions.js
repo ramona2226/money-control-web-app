@@ -3,7 +3,7 @@ window.transactions = {
     API_URL: "http://localhost:8085",
 
     getTransactions: function () {
-
+const userid = 94;
         $.ajax({
             url:MoneyControl.API_URL + "/transactions",
             method: "GET"
