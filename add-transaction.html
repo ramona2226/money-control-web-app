@@ -2,54 +2,45 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title></title>Add-Transaction</title>
-    <link rel="stylesheet" type="text/css" href="main.css/add-transaction.css/"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Add Transaction</title>
+    <link rel="stylesheet" type="text/css" href="css/add-transaction.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 </head>
-<div id="add-transaction">
+<body>
+<div id="add-transaction-title">
 <h1>Add Transaction</h1>
 </div>
-<body>
-
-
 <form id="create-transaction-form">
-</form>
 
-<form id="type-transaction">
+
 
     <label for="type-of-transaction-from">Type of transaction:</label><input type="text" id="type-of-transaction-from" placeholder="Add / Pay">
-</form >
 
 
-
-    </br
 
     <label for="transaction-from">From:</label><input type="text" id="transaction-from">
-</br
 
     <label for="transaction-to">To:</label><input type="text" id="transaction-to">
-</br
 
 
     <label for="transaction-amount">Amount:</label><input type="text" id="transaction-amount">
-</br
 
-    <label for="transaction-date">Date:</label><input type="date" id="transaction-date" ></label>
-</br
+
+    <label for="transaction-date">Date:</label><input type="date" id="transaction-date" >
 
 
     <label for="transaction-description">Description:</label><input type="text" id="transaction-description">
 
-</br
-
-<label for="transaction-userId">UserId:</label><input type="text" id="transaction-userId" ></label>
 
 
+<label for="transaction-userId">UserId:</label><input type="text" id="transaction-userId" >
 
-   <form id="confirm-transaction">
+
+
+   <div id="confirm-transaction">
     <button>Confirm</button>
-</form>
+</div>
 
 </form>
 <script src="js/lib/jquery-3.5.1.slim.js"></script>
