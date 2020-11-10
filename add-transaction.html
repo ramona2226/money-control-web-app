@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title></title> Add transaction</title>
+    <title></title>Add-Transaction</title>
     <link rel="stylesheet" type="text/css" href="main.css/add-transaction.css/"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 </head>
+<div id="add-transaction">
+<h1>Add Transaction</h1>
+</div>
 <body>
 
-<h1 > Add transaction</h1>
-<form id="add-transaction">
 
-
-<button>Add</button>
+<form id="create-transaction-form">
 </form>
 
-<form id="pay-transaction">
-<button>Pay</button>
+<form id="type-transaction">
 
+    <label for="type-of-transaction-from">Type of transaction:</label><input type="text" id="type-of-transaction-from" placeholder="Add / Pay">
 </form >
 
 
@@ -46,10 +46,14 @@
 <label for="transaction-userId">UserId:</label><input type="text" id="transaction-userId" ></label>
 
 
-</form>
+
    <form id="confirm-transaction">
     <button>Confirm</button>
 </form>
+
+</form>
+<script src="js/lib/jquery-3.5.1.slim.js"></script>
+<script src="js/addTransaction.js"></script>
 
 </body>
 </html>

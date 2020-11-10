@@ -19,10 +19,12 @@ window.transactions = {
 
     },
     bindEvents: function () {
-        $('')
-            .delegate('.all_transactios_button', 'click', function (event))
-        event.preventDefault();
-        $(this).
+        $('#create-transaction-form').submit(function (event) {
+event.preventDefault()
+
+
+        })
+
     }
 };
 
