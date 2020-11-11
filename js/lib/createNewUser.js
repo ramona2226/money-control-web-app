@@ -20,9 +20,10 @@ window.CreateUser= {
             method:"POST",
             contentType: "application/json",
             data: JSON.stringify(body)
-        }).done(function () {
-window.location.replace("http://localhost:63342/money-control-web-app/js/profil.html?_ijt=dqlogmld5fajvq90ake8kjnhna")
-            console.log("Create new User")
+        }).done(function (response) {
+            localStorage.setItem("userId", response.id);
+            console.log("Create new User", response)
+
         })
     },
 
@@ -31,6 +32,8 @@ window.location.replace("http://localhost:63342/money-control-web-app/js/profil.
         $('#create-user-button').click(function (event) {
             event.preventDefault()
             CreateUser.createUser()
+
+
         });
     }
 };

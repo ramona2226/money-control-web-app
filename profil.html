@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login User</title>
-    <link rel="stylesheet" href="css/MoneyControl/user-login.css">
+    <link rel="stylesheet" href="css/profil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 </head>
 <body>
@@ -13,9 +13,9 @@
     <div id="user-first-and-second-name">
 
 
-        <label for="user-first-name"></label><input type="text" id="user-first-name">
+        <label for="user-first-name"></label><input type="text" id="user-first-name" disabled>
 
-        <label for="user-second-name"></label><input type="text"  id="user-second-name">
+        <label for="user-last-name"></label><input type="text"  id="user-last-name" disabled>
 
     </div>
 </form>
@@ -45,9 +45,15 @@
 <form id="my-transactions-form">
     <button>My Transactions</button>
 
+    <div id="ceva" style="margin-top:150px;">
+        <button id="logout">logout</button>
+    </div>
+
 
 </form>
     <script src="js/lib/jquery-3.5.1.js"></script>
+    <script src="js/moneyControl.js"></script>
+    <script src="js/lib/profil.js"></script>
 
 
 

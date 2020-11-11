@@ -23,12 +23,12 @@ const userIdValue = 93;
 // obiectul meu Json in care pun proprietatile pe care le asteapta requestul din backend.
         let body = {
 
-            type: "typeValue",
-            from: "fromValue",
-            to: "toValue",
+            type: typeValue,
+            from: fromValue,
+            to: toValue,
             amount: amountValue,
             date: dateValue,
-            description: "descriptionValue",
+            description: descriptionValue,
             userId: userIdValue
 
 
@@ -43,7 +43,7 @@ const userIdValue = 93;
 
         }).done(function () {
 
-
+            //sa zicem ca mergi inapoi pe pagina de my transactions
             console.log("Successful transaction")
         })
     },

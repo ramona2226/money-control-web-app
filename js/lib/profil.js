@@ -1,61 +1,37 @@
-var API_URL = "http://localhost:8085";
-function setUserId(id) {
-    localStorage.setItem("userId", id);
-}
-function getUserId() {
-    localStorage.getItem("userId");
-}
+var user = MoneyControl.user;
+window.Profil = {
+    user: {
+        firstName:localStorage.getItem('firstName'),
+        lastName:localStorage.getItem('lastName'),
+        id:localStorage.getItem('userId'),
+    },
 
-var user;
-var getUser = function(userId) {
+    getBudget: function () {
+        if (user.id) {
+            $.ajax({
+                // url: MoneyControl.API_URL + "/users",
+                url: MoneyControl.API_URL + "/budgets/" + user.id,
+                method:"GET",
+            }).done(function (response) {
+                console.log(response);
+                $("#budget-valute-name").val(response.balance);
+            })
+        } else {
+            window.location.replace('http://localhost:63342/money-control-web-app/index.html?_ijt=nmolnls8f5tnvh8d7ne3s6okos');
+        }
+    },
 
-    $.ajax({
-        url: API_URL + '/users/'+ userId,
-        method: 'GET'
-    }).done(function (response) {
-        //poate returna 0, 1
-        console.log(response);
-        user = response;
-    })
-}
-var budget;
-var getUserBudget = function(userId) {
+    bindEvents: function (){
 
-    $.ajax({
-        url: API_URL + '/budgets/'+ userId,
-        method: 'GET'
-    }).done(function (response) {
-        //poate returna 0, 1
-        console.log(response);
-        budget = response;
-    })
-}
-var transactions;
-var getTransactions = function(userId) {
+        //.val() ii getter, .val(valoare) ii setter
+        $("#user-first-name").val(user.firstName);
+        $("#user-last-name").val(user.lastName);
+        Profil.getBudget();
 
-    $.ajax({
-        url: API_URL + '/transactions/' + id,
-        method: 'GET'
-    }).done(function (response) {
-        console.log(response);
-        transactions = response;
-    })
-}
-
-
-
-
-
-
-
-
-
-
-
-// getUser(); dupa care getBudget() dupa care getTransactions();
-// pe variabila budget ai informatii despre balance si currency, va trebui sa le afisezi in fereastra.
-// dupa care: pe variabila transactions ai toate, le parcurgi si le adaugi in tabel
-//
-//
-// .text("ceva");
-// $("table") add row jquery;
+        $('#logout').click(function(){
+            localStorage.clear();
+            window.location.replace('http://localhost:63342/money-control-web-app/index.html?_ijt=nmolnls8f5tnvh8d7ne3s6okos');
+        });
+    }
+};
+Profil.bindEvents();
