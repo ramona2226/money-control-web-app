@@ -17,9 +17,8 @@ const dateValue = $('#transaction-date').val();
 
 const descriptionValue = $('#transaction-description').val();
 
-const userIdValue = $('#transaction-userId').val();
-
-
+//const userIdValue = $('#transaction-userId').val();
+const userIdValue = 93;
 
 // obiectul meu Json in care pun proprietatile pe care le asteapta requestul din backend.
         let body = {
@@ -37,7 +36,7 @@ const userIdValue = $('#transaction-userId').val();
 
 //request
         $.ajax({
-            url: MoneyControl.API_URL + "/addTransaction",
+            url: MoneyControl.API_URL + "/transactions",
             method: "POST",
             contentType: "application/json",
             data: JSON.stringify(body)
