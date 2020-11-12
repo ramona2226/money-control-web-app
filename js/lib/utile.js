@@ -41,20 +41,3 @@ var getTransactions = function(userId) {
     })
 }
 
-
-
-
-
-
-
-
-
-
-
-// getUser(); dupa care getBudget() dupa care getTransactions();
-// pe variabila budget ai informatii despre balance si currency, va trebui sa le afisezi in fereastra.
-// dupa care: pe variabila transactions ai toate, le parcurgi si le adaugi in tabel
-//
-//
-// .text("ceva");
-// $("table") add row jquery;

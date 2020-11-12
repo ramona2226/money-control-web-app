@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>My Transactions</title>
-    <link rel="stylesheet" type="text/css" href="my-transactions.html" />
+    <link rel="stylesheet"  href="css/my-transactions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 
 <body>
+
+
+<input type="button" id="go-back-to-your-profile-window" value="Back">
+
 <div id="my-transactions">
 
 <h1> My Transactions</h1>
@@ -32,6 +36,7 @@
 
     <tbody id="my-transaction-table">
     <tr>
+        // aici sa aduc din backend dupa id userului si anume folosindu-ma de localsTORAGE.
         <td> Add </td>
         <td>    Vlad</td>
         <td>    Ramona</td>
@@ -62,11 +67,13 @@
         <td>  <a href="#" class="delete-link"><i class="fas fa-trash-alt"></i></a></td>
 
 
-    <tr>
+
 
 
 
     </tr>
+
+
     </tbody>
 </table>
 </div>

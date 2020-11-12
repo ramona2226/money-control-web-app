@@ -21,7 +21,7 @@ window.LoginUser= {
                 console.log("Login User");
                 window.location.replace("http://localhost:63342/money-control-web-app/profil.html?_ijt=dqlogmld5fajvq90ake8kjnhna")
             } else {
-                alert('nu avem user cu nume si prenume introduse');
+                alert('This user doesn`t exist.');
             }
 
         })
