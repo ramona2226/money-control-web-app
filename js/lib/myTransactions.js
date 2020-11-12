@@ -2,7 +2,6 @@ var user = MoneyControl.user;
 window.myTransactions = {
 
     getMyTransactions: function () {
-
         $.ajax({
             url: MoneyControl.API_URL + "/transactions" + userId,
             method: "GET"
