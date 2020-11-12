@@ -26,24 +26,20 @@ window.Profil = {
 
          function () {
              $('#add-transaction').click(function (event) {
+                 event.preventDefault()
                  window.location.replace("http://localhost:63342/money-control-web-app/add-transaction.html?_ijt=kkia36k8grrvcbkp0ceag6dhhq")
              })
          }
         },
 
-    // de vazut cum pot sa ma duca in alta parte.
-         function () {
-            $('#my-transactions').click(function (event) {
-                window.location.replace("http://localhost:63342/money-control-web-app/my-transactions.html?_ijt=2mac92gdsjjc9e5cjh110pqqms")
-            })
-
 
         $('#logout').click(function () {
             localStorage.clear();
             window.location.replace('http://localhost:63342/money-control-web-app/index.html?_ijt=nmolnls8f5tnvh8d7ne3s6okos');
-        })
 
-};
+
+
+});
 Profil.bindEvents();
 
 

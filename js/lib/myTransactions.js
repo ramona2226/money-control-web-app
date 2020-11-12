@@ -8,6 +8,7 @@ window.myTransactions = {
             method: "GET"
         }).done(function (response) {
             console.log(response)
+
             //// aici imi trebuie ceva sa imi adauge toate randurile intr-un tabel, CUM AM FACUT LA CURS forEach..
         });
 
