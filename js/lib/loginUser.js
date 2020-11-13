@@ -13,6 +13,7 @@ window.LoginUser= {
             method:"GET",
         }).done(function (response) {
             if (response.totalElements > 0) {
+                // var user = response.content[0];
                 var user = response.content[2];
                 localStorage.setItem('userId', user.id);
                 localStorage.setItem('firstName', user.firstName);
