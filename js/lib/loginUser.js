@@ -8,23 +8,24 @@ window.LoginUser= {
 
         $.ajax({
 
-            url: MoneyControl.API_URL + "/users",
-            method:"GET",
-        }).done(function (response) {
-          if (response.totalElements > 0) {
-                 var user = response.content[0];
-                localStorage.setItem('userId', user.id);
-                localStorage.setItem('firstName', firstNameValue);
-                localStorage.setItem('lastName', lastNameValue);
-                console.log(response);
-                console.log("Login User");
-                window.location.replace("http://localhost:63342/money-control-web-app/profil.html?_ijt=dqlogmld5fajvq90ake8kjnhna")
-            } else {
-                alert('This user doesn`t exist. Please create one');
-            }
+            // http://localhost:8085/users/byName?firstName=v&lastName=a
 
+            url: MoneyControl.API_URL + "/users/byName?firstName=" + firstNameValue + "&lastName=" + lastNameValue,
+                method:"GET",
+        }).done(function (response) {
+            const user = response.content[0];
+            if (response.totalElements == 1) {
+                const user = response.content[0];
+                localStorage.setItem('userId', user.id);
+                localStorage.setItem('firstName', user.firstName);
+                localStorage.setItem('lastName', user.lastName);
+                window.location.replace("http://localhost:63342/money-control-web-app/profil.html?_ijt=dqlogmld5fajvq90ake8kjnhna");
+            } else {
+                alert('This user doesn`t exist.');
+            }
         })
-    },
+        },
+
 
     bindEvents: function (){
 
