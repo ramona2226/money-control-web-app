@@ -1,8 +1,6 @@
 window.AddTransaction = {
 
 
-    API_URL: "http://localhost:8085",
-// citirea datelor din formular
     createTransaction: function () {
 
 const typeValue = $('#type-of-transaction-from').val();
@@ -16,12 +14,13 @@ const amountValue = $('#transaction-amount').val();
 const dateValue = $('#transaction-date').val();
 
 const descriptionValue = $('#transaction-description').val();
+const userIdValue = $('#user-Id').val();
 
-//const userIdValue = $('#transaction-userId').val();
-const userIdValue = 93;
 
-// obiectul meu Json in care pun proprietatile pe care le asteapta requestul din backend.
+
+
         let body = {
+
 
             type: typeValue,
             from: fromValue,
@@ -40,18 +39,16 @@ const userIdValue = 93;
             method: "POST",
             contentType: "application/json",
             data: JSON.stringify(body)
-
         }).done(function () {
-
-            //sa zicem ca mergi inapoi pe pagina de my transactions
-            console.log("Successful transaction")
+                        console.log("Successful transaction")
+            window.location.replace("http://localhost:63342/money-control-web-app/profil.html?_ijt=9es6ma7cd41cls8sbgsk6bltc7")
         })
     },
 
 
     bindEvents: function () {
 
-            $('#confirm-transaction').click(function (event) {
+            $('#confirm').click(function (event) {
                 event.preventDefault()
                 AddTransaction.createTransaction()
             });

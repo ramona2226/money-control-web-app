@@ -7,7 +7,8 @@ indow.Profil = {
                 method: "GET",
             }).done(function (response) {
                 console.log(response);
-                $("#balance").val(response.balance);
+                    $("#balance").val(response.balance);
+
             })
         } else {
             window.location.replace("http://localhost:63342/money-control-web-app/index.html?_ijt=8bq708htgsc3uln8v2shl0s4ho");

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Transaction</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    //<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet"  type="text/css" href="css/add-transaction.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 </head>
 <body>
@@ -24,10 +24,7 @@
     <label for="transaction-to">To:</label><input type="text" id="transaction-to">
 
 
-    <label for="transaction-amount">Amount:</label><input type="text" id="transaction-amount">
-    <label for="valute-name"><i class="fas fa-euro-sign"></i></label><input type="text" id="valute-name">
-
-
+    <label for="transaction-amount">Amount in EUR:</label><input type="number" id="transaction-amount">
 
 
     <label for="transaction-date">Date:</label><input type="date" id="transaction-date" >
@@ -37,9 +34,6 @@
 
 
 
-<label for="transaction-userId">UserId:</label><input type="text" id="transaction-userId" >
-
-
 
    <div id="confirm-transaction">
     <button>Confirm</button>
@@ -47,7 +41,6 @@
 
 </form>
 <script src="js/lib/jquery-3.5.1.js"></script>
-<script src="css/add-transaction.css"></script>
 <script src="js/lib/addTransaction.js"></script>
 
 </body>

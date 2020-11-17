@@ -26,34 +26,33 @@
 
             <div id="balance">
 
-            <input type="text" id="balance-valute-name">
+            <input type="text" id="balance-valute-name" disabled>
             <label for="balance-valute-name"><i class="fas fa-euro-sign"></i> </label>
         </div>
 
         </div>
     </form>
-</div>
 
 
-    <div id="add-transaction">
-  <button>Add Transaction</button>
-    </div>
+<div>
+        <a href="add-transaction.html">
+            <input id="add-transaction" type="button" value="Add Transaction" />
+
+        </a>
 
 
 
+    <a href="my-transactions.html">
+        <input id="my-transactions" type="button" value="My Transaction" />
 
-<div id="my-transactions" style="margin-top:10px;">
-    <a href="http://localhost:63342/money-control-web-app/js/my-transactions.html?_ijt=of22hnn7qljmqq0j3v31strp5c">
-    <button>My Transactions</button>
+    </a>
+
+
+    <a href="index.html">
+
+  <input id="logout" type="button" value="Logout" />
     </a>
 </div>
-
-    <a href="http://localhost:63342/money-control-web-app/add-transaction.html?_ijt=of22hnn7qljmqq0j3v31strp5c"> MY TRANSACTIONS </a>
-    <div id="logoutButton" style="margin-top:150px;">
-        <button id="logout">logout</button>
-    </div>
-
-
 
     <script src="js/lib/jquery-3.5.1.js"></script>
     <script src="js/moneyControl.js"></script>
