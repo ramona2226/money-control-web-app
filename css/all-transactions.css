@@ -5,8 +5,8 @@
 }
 
 #existing-transactions td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 34px solid #ddd;
+    padding: 23px;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}

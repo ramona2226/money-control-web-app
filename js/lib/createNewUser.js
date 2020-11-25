@@ -20,8 +20,8 @@ window.CreateUser= {
             contentType: "application/json",
             data: JSON.stringify(body)
         }).done(function (response) {
-             console.log("Create new User", response)
-              window.location.replace("http://localhost:63342/money-control-web-app/profil.html")
+             console.log("Create new User", response);
+              window.location.replace("http://localhost:63342/money-control-web-app/login-user.html")
         })
     },
     bindEvents: function (){

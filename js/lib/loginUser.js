@@ -8,7 +8,6 @@ window.LoginUser= {
 
         $.ajax({
 
-            // http://localhost:8085/users/byName?firstName=v&lastName=a
 
             url: MoneyControl.API_URL + "/users/byName?firstName=" + firstNameValue + "&lastName=" + lastNameValue,
                 method:"GET",

@@ -5,12 +5,10 @@ window.MoneyControl= {
         firstName:localStorage.getItem('firstName'),
         lastName:localStorage.getItem('lastName'),
         id:localStorage.getItem('userId'),
-    }
-  // getUser: function () {
+
+    },
 
 
-
-  // }
 
 
 
