@@ -1,0 +1,36 @@
+body {
+    background-color: linen;
+    background-image: url("https://thumbs.dreamstime.com/z/wallet-euro-bills-there-some-banknotes-money-scarce-new-poverty-34426704.jpg");
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+h1 {
+    color: olive;
+    text-align: left;
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 50px;
+}
+
+
+h3 {
+    color: olive;
+    text-align: left;
+    font-family: "Roboto Thin", sans-serif;
+    font-size: 50px;
+}
+
+#balance {
+    font-size: 20px;
+    text-align: right;
+}
+#altreilea {
+    margin-top: 100px;
+    font-weight: bold;
+
+}

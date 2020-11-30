@@ -29,10 +29,6 @@ window.Profil = {
         Profil.getUserDetails();
 
 
-        $('#add-transaction').click(function (event) {
-            event.preventDefault()
-
-        })
 
         $('#logout').click(function () {
             localStorage.clear();
