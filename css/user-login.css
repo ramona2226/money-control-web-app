@@ -8,3 +8,14 @@ h1 {
     font-family: "Roboto Thin", sans-serif;
     font-size: 50px;
 }
+#firstName{
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: linen;
+
+}
+#lastName{
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: linen;
+}

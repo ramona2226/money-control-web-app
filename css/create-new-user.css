@@ -7,4 +7,24 @@ h1 {
     text-align: left;
     font-family: "Roboto Thin", sans-serif;
     font-size: 50px;
+
+
+}
+#create-user-button{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+#firstName{
+    margin-top: 20px;
+    font-weight: bold;
+     background-color: linen;
+
+}
+#lastName{
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: linen;
 }

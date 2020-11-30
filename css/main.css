@@ -15,6 +15,18 @@ p {
     font-family: verdana, serif;
     color: brown;
     text-align: center;
-    font-size:18px;
+    font-size: 18px;
 
+}
+#create-new-user{
+      margin-top: 100px;
+      font-weight: bold;
+    font-size: 20px;
+  }
+
+
+#login-user{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
 }
