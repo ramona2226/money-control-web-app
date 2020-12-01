@@ -7,13 +7,8 @@ window.CreateUser= {
 
 
         let firstNameValue = $('#firstName').val();
-        if (firstNameValue !== null) {
-            alert("This first name already exists. Please try again.")
-        }
         let lastNameValue = $('#lastName').val();
-        if (lastNameValue !== null) {
-            alert("This last name already exists. Please try again.")
-        }
+
 
 
         let body = {
