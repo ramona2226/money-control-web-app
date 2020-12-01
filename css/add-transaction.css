@@ -1,6 +1,61 @@
+body{
+    background-color: lightyellow;
+}
+ h1{
+     font-size: 50px;
+     font-weight: bolder;
+
+ }
+
+#confirm-transaction{
+    margin-top: 40px;
+    font-size: 45px;
+    background-color: lightcyan;
 
 
+}
+#type-of-transaction{
 
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+
+}
+#transaction-from{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+
+}
+#transaction-to{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+#transaction-amount{
+
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#transaction-date{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#transaction-description{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+}
 
 
 

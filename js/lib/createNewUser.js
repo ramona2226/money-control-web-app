@@ -4,8 +4,16 @@ window.CreateUser= {
 
     createNewUser: function () {
 
-        const firstNameValue = $('#firstName').val();
-        const lastNameValue = $('#lastName').val();
+
+
+        let firstNameValue = $('#firstName').val();
+        if (firstNameValue !== null) {
+            alert("This first name already exists. Please try again.")
+        }
+        let lastNameValue = $('#lastName').val();
+        if (lastNameValue !== null) {
+            alert("This last name already exists. Please try again.")
+        }
 
 
         let body = {
@@ -26,7 +34,7 @@ window.CreateUser= {
     },
     bindEvents: function (){
         $('#create-user-button').click(function () {
-          CreateUser.createNewUser();
+                      CreateUser.createNewUser();
         });
     }
 };

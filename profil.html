@@ -9,65 +9,49 @@
 <body>
 
     <h1> User </h1>
-    <form>
-    <div id="user-first-and-second-name">
-
-
-        <label for="user-first-name"></label><input type="text" id="user-first-name" disabled>
-
+    <div >
+        <label for="user-first-name"></label><input type="text" id="user-first-name"  disabled>
+    </div>
+        <div>
         <label for="user-last-name"></label><input type="text"  id="user-last-name" disabled>
 
     </div>
-</form>
 
-<form>
 <div >
     <h3> Balance </h3>
-
-
-
             <input type="text" id="balance" disabled>
             <label for="balance"><i class="fas fa-euro-sign"></i> </label>
         </div>
 
-    </form>
-
-
 <div>
+    <form id="buttons">
+        <div>
         <a href="add-transaction.html">
 
             <input id="add-transaction" type="button" value="Add Transaction" />
 
         </a>
+        </div>
 
-<br/>
+        <div>
 
     <a href="my-transactions.html">
         <input id="my-transactions" type="button" value="My Transaction" />
 
     </a>
+</div>
 
-<br/>
+        <div>
+
     <a href="index.html">
 
   <input id="logout" type="button" value="Logout" />
     </a>
+    </div>
+    </form>
 </div>
-<div>
-    <a>
-        abc
-    </a>
-</div>
-<div>
-    <a>
-        cde
-    </a>
-</div>
-<div id="altreilea">
-    <a>
-        fgh
-    </a>
-</div>
+
+
 
     <script src="js/lib/jquery-3.5.1.js"></script>
     <script src="js/moneyControl.js"></script>

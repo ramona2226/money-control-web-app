@@ -17,14 +17,18 @@ h1 {
 
 
 }
-#firstName{
+#firstName {
     margin-top: 20px;
     font-weight: bold;
-     background-color: linen;
-
+    background-color: linen;
+    font-size: 20px;
+    text-align: right;
 }
+
 #lastName{
     margin-top: 20px;
     font-weight: bold;
     background-color: linen;
+    font-size: 20px;
+    text-align: right;
 }

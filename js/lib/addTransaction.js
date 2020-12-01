@@ -6,23 +6,12 @@ window.AddTransaction = {
 
         const typeValue = $('#type-of-transaction').val();
 
-        const fromValue = $('#transaction-from').val();
+       const fromValue = $('#transaction-from').val()
 
         const toValue = $('#transaction-to').val();
 
-
-       // if ($('#type-of-transaction' === "pay")) {
-           // const fromValue = $('#user-first-name').val();
-       // }
-
-
-          //  if ($('#type-of-transaction' === "add")) {
-              //  const toValue = $('#user-first-name').val();
-
-          //  }
-
         let amountValue = $('#transaction-amount').val();
-        if (typeValue == "pay") {
+        if (typeValue === "pay") {
             amountValue = -amountValue;
         }
 
@@ -45,7 +34,6 @@ window.AddTransaction = {
 
 
         }
-            // "userId": 0
 
 
         $.ajax({
@@ -64,9 +52,12 @@ window.AddTransaction = {
 
         $('#confirm-transaction').click(function (event) {
             event.preventDefault()
+            $("#tr");
             AddTransaction.createTransaction()
 
         });
+
+
 
 
 

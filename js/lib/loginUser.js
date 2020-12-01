@@ -12,8 +12,7 @@ window.LoginUser= {
             url: MoneyControl.API_URL + "/users/byName?firstName=" + firstNameValue + "&lastName=" + lastNameValue,
                 method:"GET",
         }).done(function (response) {
-            const user = response.content[0];
-            if (response.totalElements == 1) {
+            if (response.totalElements === 1) {
                 const user = response.content[0];
                 localStorage.setItem('userId', user.id);
                 localStorage.setItem('firstName', user.firstName);
